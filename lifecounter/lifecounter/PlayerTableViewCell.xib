@@ -31,7 +31,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="+"/>
                                 <connections>
-                                    <action selector="plusButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Pqb-Ja-3jL"/>
+                                    <action selector="plusButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dtJ-22-AtC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lN2-st-6Xi">
@@ -42,7 +42,7 @@
                                     <color key="baseBackgroundColor" systemColor="systemRedColor"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="minusButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tFk-Jd-6th"/>
+                                    <action selector="minusButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Ja7-8J-u2N"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PP0-a6-FVC">
@@ -53,25 +53,41 @@
                         </subviews>
                     </stackView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 Lives " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdJ-M2-JUL">
-                        <rect key="frame" x="126" y="113" width="68" height="20.333333333333343"/>
+                        <rect key="frame" x="126" y="113" width="68" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.329999999999998" id="2W6-pv-S6w"/>
+                            <constraint firstAttribute="width" constant="68" id="RHX-uk-N3e"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaQ-aD-1MZ">
                         <rect key="frame" x="52" y="100" width="56" height="9.6666666666666714"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="56" id="CbO-nF-49B"/>
+                            <constraint firstAttribute="height" constant="9.6699999999999999" id="d2C-Wn-9kP"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="8"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEW-JS-kBj">
                         <rect key="frame" x="217" y="100" width="56" height="9.6666666666666714"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="9.6699999999999999" id="9ao-Nd-0a2"/>
+                            <constraint firstAttribute="width" constant="56" id="g0Z-Kf-L2C"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="8"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2z-Z2-wOI">
-                        <rect key="frame" x="110" y="20" width="101" height="21"/>
+                        <rect key="frame" x="110" y="20.666666666666671" width="100.33333333333331" height="20.333333333333329"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100.33" id="CIv-K9-yn9"/>
+                            <constraint firstAttribute="height" constant="20.329999999999998" id="vmP-4D-hlU"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -94,9 +110,9 @@
             <connections>
                 <outlet property="addLifeTextField" destination="WqI-qM-ZVG" id="DeB-sP-yx1"/>
                 <outlet property="lifeLabel" destination="sdJ-M2-JUL" id="A3n-Cm-WGz"/>
-                <outlet property="minusButton" destination="lN2-st-6Xi" id="V5Q-Ab-W18"/>
+                <outlet property="minusButton" destination="lN2-st-6Xi" id="IIK-8m-q73"/>
                 <outlet property="playerNameLabel" destination="w2z-Z2-wOI" id="Ahm-z2-G1l"/>
-                <outlet property="plusButton" destination="b6E-23-P9F" id="wK6-wf-bPU"/>
+                <outlet property="plusButton" destination="b6E-23-P9F" id="Iyy-eY-X3r"/>
                 <outlet property="subtractLifeTextField" destination="PP0-a6-FVC" id="K5L-my-N9p"/>
             </connections>
             <point key="canvasLocation" x="-27.480916030534349" y="40.845070422535215"/>
@@ -104,10 +120,10 @@
     </objects>
     <resources>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
