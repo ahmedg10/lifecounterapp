@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="150" id="KGk-i7-Jjw" customClass="PlayerTableViewCell" customModule="lifecounter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="tj6-Cc-EQR">
+                        <rect key="frame" x="60.666666666666657" y="58" width="198.99999999999997" height="34.333333333333343"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WqI-qM-ZVG">
+                                <rect key="frame" x="0.0" y="0.0" width="32" height="34.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6E-23-P9F">
+                                <rect key="frame" x="55" y="0.0" width="34.333333333333343" height="34.333333333333336"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="+"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lN2-st-6Xi">
+                                <rect key="frame" x="112.33333333333336" y="0.0" width="31.666666666666671" height="34.333333333333336"/>
+                                <color key="tintColor" systemColor="systemGreenColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="-">
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PP0-a6-FVC">
+                                <rect key="frame" x="167" y="0.0" width="32" height="34.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                    </stackView>
+                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Player Name" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lIf-Ln-048">
+                        <rect key="frame" x="105" y="9" width="110" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 Lives " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sdJ-M2-JUL">
+                        <rect key="frame" x="126" y="113" width="68" height="20.333333333333343"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TaQ-aD-1MZ">
+                        <rect key="frame" x="52" y="100" width="56" height="9.6666666666666714"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insert Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vEW-JS-kBj">
+                        <rect key="frame" x="217" y="100" width="56" height="9.6666666666666714"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="8"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vEW-JS-kBj" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="85" id="DNs-bC-4Su"/>
+                    <constraint firstItem="tj6-Cc-EQR" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="GPN-ms-3Dm"/>
+                    <constraint firstItem="sdJ-M2-JUL" firstAttribute="top" secondItem="tj6-Cc-EQR" secondAttribute="bottom" constant="20.666666666666657" id="Gj2-6I-siY"/>
+                    <constraint firstItem="lIf-Ln-048" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="OFf-Xj-vO9"/>
+                    <constraint firstItem="TaQ-aD-1MZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-80" id="Rb3-Ae-k02"/>
+                    <constraint firstItem="tj6-Cc-EQR" firstAttribute="top" secondItem="lIf-Ln-048" secondAttribute="bottom" constant="15" id="eTc-9I-8XZ"/>
+                    <constraint firstItem="sdJ-M2-JUL" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="huR-n1-kt3"/>
+                    <constraint firstItem="vEW-JS-kBj" firstAttribute="top" secondItem="PP0-a6-FVC" secondAttribute="bottom" constant="7.6666666666666572" id="lnb-Jj-Riv"/>
+                    <constraint firstItem="TaQ-aD-1MZ" firstAttribute="top" secondItem="WqI-qM-ZVG" secondAttribute="bottom" constant="7.6666666666666572" id="mQZ-Sy-ex4"/>
+                    <constraint firstItem="tj6-Cc-EQR" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xee-3d-S73"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addLifeTextField" destination="WqI-qM-ZVG" id="DeB-sP-yx1"/>
+                <outlet property="lifeLabel" destination="sdJ-M2-JUL" id="A3n-Cm-WGz"/>
+                <outlet property="minusButton" destination="lN2-st-6Xi" id="V5Q-Ab-W18"/>
+                <outlet property="playerNameTextField" destination="lIf-Ln-048" id="MUw-FC-pfH"/>
+                <outlet property="plusButton" destination="b6E-23-P9F" id="wK6-wf-bPU"/>
+                <outlet property="subtractLifeTextField" destination="PP0-a6-FVC" id="K5L-my-N9p"/>
+            </connections>
+            <point key="canvasLocation" x="-27.480916030534349" y="40.845070422535215"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
