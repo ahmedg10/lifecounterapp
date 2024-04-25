@@ -19,6 +19,7 @@
 		CF89C8302BD2DFDC00AF8347 /* lifecounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89C82F2BD2DFDC00AF8347 /* lifecounterTests.swift */; };
 		CF89C83A2BD2DFDC00AF8347 /* lifecounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89C8392BD2DFDC00AF8347 /* lifecounterUITests.swift */; };
 		CF89C83C2BD2DFDC00AF8347 /* lifecounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89C83B2BD2DFDC00AF8347 /* lifecounterUITestsLaunchTests.swift */; };
+		CF9E36AE2BDAE96800666789 /* GameHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E36AD2BDAE96800666789 /* GameHistory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		CF89C8352BD2DFDC00AF8347 /* lifecounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = lifecounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF89C8392BD2DFDC00AF8347 /* lifecounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterUITests.swift; sourceTree = "<group>"; };
 		CF89C83B2BD2DFDC00AF8347 /* lifecounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF9E36AD2BDAE96800666789 /* GameHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				CF89C8182BD2DFDA00AF8347 /* AppDelegate.swift */,
 				CF89C81A2BD2DFDA00AF8347 /* SceneDelegate.swift */,
 				CF89C81C2BD2DFDA00AF8347 /* ViewController.swift */,
+				CF9E36AD2BDAE96800666789 /* GameHistory.swift */,
 				CF89C81E2BD2DFDA00AF8347 /* Main.storyboard */,
 				CF20001A2BDA273B00008D11 /* PlayerTableViewCell.swift */,
 				CF2000202BDA311A00008D11 /* Player.swift */,
@@ -272,6 +275,7 @@
 				CF89C81D2BD2DFDA00AF8347 /* ViewController.swift in Sources */,
 				CF89C8192BD2DFDA00AF8347 /* AppDelegate.swift in Sources */,
 				CF2000212BDA311A00008D11 /* Player.swift in Sources */,
+				CF9E36AE2BDAE96800666789 /* GameHistory.swift in Sources */,
 				CF89C81B2BD2DFDA00AF8347 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
