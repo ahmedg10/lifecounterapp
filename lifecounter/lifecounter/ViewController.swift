@@ -6,99 +6,90 @@
 //
 
 import UIKit
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, PlayerTableViewCellDelegate, UITextFieldDelegate {
+    @IBOutlet weak var tableView: UITableView!
+    var players: [Player] = []
 
-class ViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.dataSource = self
+        tableView.delegate = self
+        initializePlayers()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
+        
+        // Register the nib file for the cell
+        let nib = UINib(nibName: "PlayerTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "PlayerCell")
+    }
     
+    func initializePlayers() {
+        for index in 1...2 {  // For example, start with 2 players
+            let newPlayerName = "Player \(index)"
+            players.append(Player(name: newPlayerName))
+        }
+        tableView.reloadData()
+    }
     
-    
-    
-    
-//    @IBOutlet weak var player1LifeLabel: UILabel!
-//    
-//    
-//    
-//    @IBOutlet weak var player1plusTextField: UITextField!
-//    @IBOutlet weak var player2LifeLabel: UILabel!
-//    
-//    
-//    
-//    
-//
-//    var player1LifeCounter = 20
-//    var player2LifeCounter = 20
-//    
-//    @IBOutlet weak var winnerLabel: UILabel!
-//    func updateLifeLabels() {
-//        player1LifeLabel.text = "\(player1LifeCounter) Lives"
-//        player2LifeLabel.text = "\(player2LifeCounter) Lives"
-//        
-//        // Check for losing condition
-//           if player1LifeCounter <= 0 {
-//               player1LifeLabel.text = "0 Lives"  // Ensure it shows 0 and not a negative number
-//               winnerLabel.text = "Player 1 LOSES!"
-//               winnerLabel.isHidden = false
-//               disableGameControls()  // Disable controls as Player 2 has lost
-//
-//           } else if player2LifeCounter <= 0 {
-//               player2LifeLabel.text = "0 Lives"
-//               winnerLabel.text = "Player 2 LOSES!"
-//               winnerLabel.isHidden = false
-//               disableGameControls()  // Disable controls as Player 2 has lost
-//
-//           } else {
-//               winnerLabel.isHidden = true // Hide the label if no one has lost
-//           }
-//    }
-//    
-//    func disableGameControls() {
-//       
-//        
-//    }
-//    
-//    
-//    @IBAction func plusPlayer1(_ sender: Any) {
-//        if let adjustment = Int(player1plusTextField.text ?? "") {
-//                player1LifeCounter += adjustment
-//                updateLifeLabels()
-//            }
-//    }
-//        
-//    @IBAction func minusOnePlayer1(_ sender: Any) {
-//        player1LifeCounter -= 1
-//        updateLifeLabels()
-//    }
-//    
-//    @IBAction func plusOnePlayer2(_ sender: Any) {
-//        player2LifeCounter += 1
-//        updateLifeLabels()
-//    }
-//    
-//    @IBAction func minusPlayer2(_ sender: Any) {
-//        player2LifeCounter -= 1
-//        updateLifeLabels()
-//    }
-//    @IBAction func plusFivePlayer1(_ sender: Any) {
-//        player1LifeCounter += 5
-//        updateLifeLabels()
-//    }
-//    @IBAction func plus5Player2(_ sender: Any) {
-//        player2LifeCounter += 5
-//        updateLifeLabels()
-//    }
-//    @IBAction func minusFivePlayer2(_ sender: Any) {
-//        player2LifeCounter -= 5
-//        updateLifeLabels()
-//    }
-//    @IBAction func minusFivePlayer1(_ sender: Any) {
-//        player1LifeCounter -= 5
-//        updateLifeLabels()
-//    }
-//    
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//        
-//        // Initialize UI elements here
-//        updateLifeLabels() // Update labels with initial life counts
-//    }
+    @IBAction func addPlayerButtonTapped(_ sender: Any) {
+        let newPlayerName = "Player \(players.count + 1)"
+            players.append(Player(name: newPlayerName))
+            let newIndexPath = IndexPath(row: players.count - 1, section: 0)
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+    }
+
+
+    @objc func hideKeyboard() {
+        view.endEditing(true)
+    }
+
 }
+
+extension ViewController {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return players.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PlayerCell", for: indexPath) as? PlayerTableViewCell else {
+            fatalError("Cell with identifier 'PlayerCell' not found")
+        }
+        
+        var player = players[indexPath.row]
+        // Configure the cell with data from the players array
+        if player.name == "Player" {
+            // If the player name is just "Player", append the number
+            player.name += " \(indexPath.row + 1)"
+        }
+        cell.configure(with: player, atIndex: indexPath.row)
+        cell.delegate = self
+        print("Setting delegate for cell at row \(indexPath.row)")
+
+        return cell
+    }
+}
+
+
+extension ViewController {
+    func addLifeToPlayer(amount: Int, inCell cell: PlayerTableViewCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        players[indexPath.row].lifeTotal += amount
+        tableView.reloadRows(at: [indexPath], with: .automatic)
+    }
+    
+    func subtractLifeFromOthers(amount: Int, inCell cell: PlayerTableViewCell) {
+        guard let indexPath = tableView.indexPath(for: cell) else { return }
+        for (index, player) in players.enumerated() where index != indexPath.row {
+            player.lifeTotal -= amount
+        }
+        tableView.reloadData()
+    }
+    
+    func changePlayerName(newName: String, inCell cell: PlayerTableViewCell) {
+        guard let indexPath = tableView.indexPath(for: cell), !newName.isEmpty else { return }
+        players[indexPath.row].name = newName
+        tableView.reloadRows(at: [indexPath], with: .none)
+    }
+}
+
 

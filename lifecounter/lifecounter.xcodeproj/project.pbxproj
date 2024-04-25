@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CF20001C2BDA273B00008D11 /* PlayerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF20001A2BDA273B00008D11 /* PlayerTableViewCell.swift */; };
 		CF20001D2BDA273B00008D11 /* PlayerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF20001B2BDA273B00008D11 /* PlayerTableViewCell.xib */; };
-		CF20001F2BDA2E7100008D11 /* PlayerTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF20001E2BDA2E7100008D11 /* PlayerTableView.swift */; };
 		CF2000212BDA311A00008D11 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2000202BDA311A00008D11 /* Player.swift */; };
 		CF89C8192BD2DFDA00AF8347 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89C8182BD2DFDA00AF8347 /* AppDelegate.swift */; };
 		CF89C81B2BD2DFDA00AF8347 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89C81A2BD2DFDA00AF8347 /* SceneDelegate.swift */; };
@@ -42,7 +41,6 @@
 /* Begin PBXFileReference section */
 		CF20001A2BDA273B00008D11 /* PlayerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableViewCell.swift; sourceTree = "<group>"; };
 		CF20001B2BDA273B00008D11 /* PlayerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayerTableViewCell.xib; sourceTree = "<group>"; };
-		CF20001E2BDA2E7100008D11 /* PlayerTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTableView.swift; sourceTree = "<group>"; };
 		CF2000202BDA311A00008D11 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		CF89C8152BD2DFDA00AF8347 /* lifecounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifecounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF89C8182BD2DFDA00AF8347 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,7 +109,6 @@
 				CF89C81A2BD2DFDA00AF8347 /* SceneDelegate.swift */,
 				CF89C81C2BD2DFDA00AF8347 /* ViewController.swift */,
 				CF89C81E2BD2DFDA00AF8347 /* Main.storyboard */,
-				CF20001E2BDA2E7100008D11 /* PlayerTableView.swift */,
 				CF20001A2BDA273B00008D11 /* PlayerTableViewCell.swift */,
 				CF2000202BDA311A00008D11 /* Player.swift */,
 				CF20001B2BDA273B00008D11 /* PlayerTableViewCell.xib */,
@@ -272,7 +269,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF20001C2BDA273B00008D11 /* PlayerTableViewCell.swift in Sources */,
-				CF20001F2BDA2E7100008D11 /* PlayerTableView.swift in Sources */,
 				CF89C81D2BD2DFDA00AF8347 /* ViewController.swift in Sources */,
 				CF89C8192BD2DFDA00AF8347 /* AppDelegate.swift in Sources */,
 				CF2000212BDA311A00008D11 /* Player.swift in Sources */,

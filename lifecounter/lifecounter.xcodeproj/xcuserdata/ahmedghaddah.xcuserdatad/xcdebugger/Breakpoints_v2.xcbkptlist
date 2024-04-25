@@ -20,5 +20,53 @@
             landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F181D168-D58E-421A-85B0-A1648518D915"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "lifecounter/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "addPlayerButtonTapped(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F181D168-D58E-421A-85B0-A1648518D915 - db666b750215c009"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "lifecounter.ViewController.initializePlayers() -&gt; ()"
+                  moduleName = "lifecounter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/second/iOS-Dev/lifecounterapp/lifecounter/lifecounter/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "F181D168-D58E-421A-85B0-A1648518D915 - 5131356b7103ac46"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "lifecounter.ViewController.addPlayerButtonTapped(Any) -&gt; ()"
+                  moduleName = "lifecounter"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Volumes/second/iOS-Dev/lifecounterapp/lifecounter/lifecounter/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
