@@ -61,7 +61,8 @@ class ViewController: UIViewController{
     
     @objc func didTapGameHistoryButton(){
         print("Game History Pressed")
-        let vc = (storyboard?.instantiateViewController(withIdentifier: "GameHistoryView") as? GameHistoryView)!
+        let storyboard = UIStoryboard(name: "GameHistoryView", bundle: nil)
+        let vc = (storyboard.instantiateViewController(withIdentifier: "GameHistoryView") as? GameHistoryView)!
         
         self.present(vc, animated: true, completion: nil)
         
