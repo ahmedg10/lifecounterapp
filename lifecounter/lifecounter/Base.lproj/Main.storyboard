@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjS-ou-4yi">
+                                <rect key="frame" x="132.66666666666666" y="120.99999999999999" width="127.99999999999997" height="34.333333333333329"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Game History">
+                                    <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
+                                </buttonConfiguration>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UE9-Ks-BEo">
                                 <rect key="frame" x="85" y="234" width="223" height="128.33333333333337"/>
                                 <subviews>
@@ -61,7 +68,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BLu-Ht-NCt">
-                                        <rect key="frame" x="82" y="8" width="59" height="21"/>
+                                        <rect key="frame" x="82.333333333333343" y="8.6666666666666554" width="58.666666666666657" height="20.333333333333329"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -142,15 +149,20 @@
                                     <constraint firstItem="fcq-vg-HPW" firstAttribute="centerX" secondItem="J4E-YK-dKy" secondAttribute="centerX" id="d1k-2a-rOY"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjS-ou-4yi">
-                                <rect key="frame" x="132.66666666666666" y="120.99999999999999" width="127.99999999999997" height="34.333333333333329"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yjh-xa-fnz">
+                                <rect key="frame" x="157" y="421.33333333333331" width="79" height="34.333333333333314"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Game History"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Restart"/>
+                                <connections>
+                                    <action selector="restartGameTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3w3-em-qPf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Yjh-xa-fnz" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="A0f-ay-jyO"/>
+                            <constraint firstItem="Yjh-xa-fnz" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="AIx-xs-5Oo"/>
                             <constraint firstItem="J4E-YK-dKy" firstAttribute="top" secondItem="UE9-Ks-BEo" secondAttribute="bottom" constant="131.66666666666657" id="C0P-GQ-QcF"/>
                             <constraint firstItem="UE9-Ks-BEo" firstAttribute="top" secondItem="mjS-ou-4yi" secondAttribute="bottom" constant="78.666666666666686" id="FLs-V2-Koe"/>
                             <constraint firstItem="mjS-ou-4yi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pq6-YB-T0F"/>
@@ -183,6 +195,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

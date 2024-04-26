@@ -20,6 +20,8 @@
 		CF89C83A2BD2DFDC00AF8347 /* lifecounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89C8392BD2DFDC00AF8347 /* lifecounterUITests.swift */; };
 		CF89C83C2BD2DFDC00AF8347 /* lifecounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF89C83B2BD2DFDC00AF8347 /* lifecounterUITestsLaunchTests.swift */; };
 		CF9E36AE2BDAE96800666789 /* GameHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E36AD2BDAE96800666789 /* GameHistory.swift */; };
+		CF9E36B22BDB160500666789 /* GameHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9E36B12BDB160500666789 /* GameHistoryView.swift */; };
+		CF9E36B62BDB3B1F00666789 /* GameHistoryViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF9E36B52BDB3B1F00666789 /* GameHistoryViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		CF89C8392BD2DFDC00AF8347 /* lifecounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterUITests.swift; sourceTree = "<group>"; };
 		CF89C83B2BD2DFDC00AF8347 /* lifecounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lifecounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CF9E36AD2BDAE96800666789 /* GameHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistory.swift; sourceTree = "<group>"; };
+		CF9E36B12BDB160500666789 /* GameHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameHistoryView.swift; sourceTree = "<group>"; };
+		CF9E36B52BDB3B1F00666789 /* GameHistoryViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GameHistoryViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				CF89C81A2BD2DFDA00AF8347 /* SceneDelegate.swift */,
 				CF89C81C2BD2DFDA00AF8347 /* ViewController.swift */,
 				CF9E36AD2BDAE96800666789 /* GameHistory.swift */,
+				CF9E36B12BDB160500666789 /* GameHistoryView.swift */,
+				CF9E36B52BDB3B1F00666789 /* GameHistoryViewController.storyboard */,
 				CF89C81E2BD2DFDA00AF8347 /* Main.storyboard */,
 				CF20001A2BDA273B00008D11 /* PlayerTableViewCell.swift */,
 				CF2000202BDA311A00008D11 /* Player.swift */,
@@ -247,6 +253,7 @@
 				CF89C8252BD2DFDC00AF8347 /* LaunchScreen.storyboard in Resources */,
 				CF89C8222BD2DFDC00AF8347 /* Assets.xcassets in Resources */,
 				CF89C8202BD2DFDA00AF8347 /* Main.storyboard in Resources */,
+				CF9E36B62BDB3B1F00666789 /* GameHistoryViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +280,7 @@
 			files = (
 				CF20001C2BDA273B00008D11 /* PlayerTableViewCell.swift in Sources */,
 				CF89C81D2BD2DFDA00AF8347 /* ViewController.swift in Sources */,
+				CF9E36B22BDB160500666789 /* GameHistoryView.swift in Sources */,
 				CF89C8192BD2DFDA00AF8347 /* AppDelegate.swift in Sources */,
 				CF2000212BDA311A00008D11 /* Player.swift in Sources */,
 				CF9E36AE2BDAE96800666789 /* GameHistory.swift in Sources */,

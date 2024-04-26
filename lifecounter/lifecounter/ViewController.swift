@@ -30,6 +30,7 @@ class ViewController: UIViewController{
     var playerOneName = "Player 1"
     var playerTwoName = "Player 2"
 
+   
     
     
     override func viewDidLoad() {
@@ -54,8 +55,16 @@ class ViewController: UIViewController{
         PlayerTwoMinusLivesInputField.keyboardType = .numberPad
         playerTwoAddLivesInputField.keyboardType = .numberPad
         
+        GameHistoryButton.addTarget(self, action: #selector(didTapGameHistoryButton), for:.touchUpInside)
+        
     }
     
+    @objc func didTapGameHistoryButton(){
+        print("Game History Pressed")
+        let vc = GameHistoryView()
+        self.present(vc, animated: true, completion: nil)
+        
+    }
     private func setupInitialValues(){
         playerOneLabel.text = "Player 1"
         playerTwoLabel.text = "Player 2"
@@ -64,6 +73,11 @@ class ViewController: UIViewController{
         playerOneLivesCounter.text = "\(playerOneLives) Lives"
         playerTwoLifeCounter.text = "\(playerTwoLives) Lives"
         GameHistory.shared.clearHistory()
+    }
+    
+    
+    @IBAction func restartGameTapped(_ sender: Any) {
+        self.setupInitialValues()
     }
     
     private func checkGameOver() {
