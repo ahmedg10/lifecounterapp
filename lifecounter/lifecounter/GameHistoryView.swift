@@ -9,8 +9,8 @@ import UIKit
 
 class GameHistoryView: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    @IBOutlet weak var tableView: UITableView?
     
+    @IBOutlet weak var tableView: UITableView!
     var historyEntries: [String] {
         return GameHistory.shared.entries.isEmpty ? ["No game history"] : GameHistory.shared.entries
     }
@@ -21,9 +21,9 @@ class GameHistoryView: UIViewController, UITableViewDataSource, UITableViewDeleg
         if tableView == nil {
             print("Table view is not working")
         } else{
-            tableView?.delegate = self
-            tableView?.dataSource = self
-            tableView?.reloadData()
+            tableView.delegate = self
+            tableView.dataSource = self
+            tableView.reloadData()
 
             
             

@@ -16,19 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KoA-Go-2D7">
-                                <rect key="frame" x="31.666666666666657" y="72" width="330" height="733"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="m34-Lk-RkW">
+                                <rect key="frame" x="40.666666666666657" y="68.666666666666686" width="312" height="740"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="733" id="1hC-ed-xiq"/>
-                                    <constraint firstAttribute="width" constant="330" id="xSW-TI-drh"/>
+                                    <constraint firstAttribute="width" constant="312" id="64v-Ud-PgY"/>
+                                    <constraint firstAttribute="height" constant="740" id="TJK-jB-GGX"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" id="t98-rX-7yH">
-                                        <rect key="frame" x="0.0" y="50" width="330" height="43.666667938232422"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HistoryCell" id="XXa-b1-Fm3">
+                                        <rect key="frame" x="0.0" y="50" width="312" height="43.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="t98-rX-7yH" id="mcj-je-ztv">
-                                            <rect key="frame" x="0.0" y="0.0" width="330" height="43.666667938232422"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XXa-b1-Fm3" id="YyK-IJ-piM">
+                                            <rect key="frame" x="0.0" y="0.0" width="312" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -38,17 +38,17 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="KoA-Go-2D7" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="eR0-UY-Z6b"/>
-                            <constraint firstItem="KoA-Go-2D7" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="o0M-Px-O87"/>
+                            <constraint firstItem="m34-Lk-RkW" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="2je-01-Lgs"/>
+                            <constraint firstItem="m34-Lk-RkW" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="HeO-KM-8f9"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="KoA-Go-2D7" id="EbQ-Ya-9qw"/>
+                        <outlet property="tableView" destination="m34-Lk-RkW" id="oBh-yX-OQi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25.190839694656489" y="-27.464788732394368"/>
+            <point key="canvasLocation" x="38.931297709923662" y="-34.507042253521128"/>
         </scene>
     </scenes>
     <resources>
